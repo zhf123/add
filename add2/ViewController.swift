@@ -29,6 +29,30 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var x2: UITextField!
+    @IBOutlet weak var y2: UITextField!
+    @IBOutlet weak var z2: UITextField!
+    @IBAction func miinus(sender: UIButton) {
+        
+        var a:Double!=0
+        var b:Double!=0
+        var c:Double!=0
+        if (!x.text!.isEmpty){
+            a=(x.text! as NSString).doubleValue
+        }
+        if (!y.text!.isEmpty){
+            b=(y.text! as NSString).doubleValue
+        }
+        c=a+b
+        z.text="\(c)"
+        
+    }
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,4 +65,3 @@ class ViewController: UIViewController {
     
     
 }
-
