@@ -48,20 +48,46 @@ class ViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    //存储数字字符串
+    var operand1 :String = ""
+    var operand2 :String = ""
+    
+    //存储运算符字符串
+    var operator :String = ""
     
     
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
+    @@ -62,8 +31,33 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    
+    
+    //设置命令
+    @IBAction func didClicked(sender: UIButton) {
+        //获取按钮名称
+        //print("\(sender.currentTitle)")
+        
+        let value = sender.currentTitle
+        
+        if value == "+" || value == "-" || value == "×" || value == "÷" ||
+        {
+        print("\(value)")
+        }
+        else
+        {
+            print("no value")
+        }
+        
+        
+        
+    }
+    
     
     
 }
